@@ -1,0 +1,36 @@
+@import '../../layouts/colors.scss';
+
+#slika {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+.h1 {
+    color: $text;
+    margin-top: -15px;
+    font-family: ubuntu;
+    font-size: 70px;
+    font-weight: bold;
+}
+.h2 {
+    color: $text;
+    font-family: 'Futura Lt BT';
+    font-size: 53px;
+    font-weight: 100;
+}
+#kontakt {
+    height: 270;
+    width: 119;
+}
+.slike {
+
+}
+.ul {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+}
