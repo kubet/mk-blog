@@ -1,16 +1,16 @@
-﻿import get from 'lodash/get'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { siteMetadata } from '../../../gatsby-config'
+﻿import React from 'react'
+import Link from 'gatsby-link'
 
-class Profile extends React.Component {
-  render() {
-    const pathPrefix =
+/* import './style.scss' */
+const pathPrefix =
       process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
-    const title = 'Profile'
-    return ( 
-      
-     )
- 
+      const title = 'O nama'
+function onamaPage() {
+return ( 
+    <div>
+        <h1>test</h1>
+    </div>
+)}
 
-export default Profile
+
+export default onamaPage

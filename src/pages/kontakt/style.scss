@@ -1,5 +1,8 @@
 @import '../../layouts/colors.scss';
 
+.ht, .bo {
+    ooverflow-y: hidden;
+}
 #slika {
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -9,27 +12,38 @@
     top: 0px; 
     z-index: -1;
 }
-.h1 {
+.span, .h2 {
+    position: absolute;
+}
+.h2 {
     color: $text;
     margin-top: -15px;
     font-family: ubuntu;
     font-size: 70px;
     font-weight: bold;
 }
-.h2 {
+.span {
     color: $text;
     font-family: 'Futura Lt BT';
     font-size: 53px;
     font-weight: 100;
 }
-#kontakt {
+/* #kontakt {
+    float: right;
     height: 270;
     width: 119;
-}
-.slike {
+} */
+.slike { 
+    position: absolute;
+    height: 150px;
+    width: auto;
 
 }
 .ul {
+    z-index:1000;
+    bottom: 285px;
+    position: absolute;
+    float: left;
     margin: 0 auto;
     text-decoration: none;
     list-style: none;
