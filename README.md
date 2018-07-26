@@ -6,6 +6,14 @@ Projekat je jos uvek u razvoju build instalacija → https://github.com/kubet/pu
 
 U mk-blog folderu
 ```
+git clone https://github.com/kubet/mk-blog
+```
+
+```
+cd mk-blog
+```
+
+```
 nmp install
 ```
 ```
