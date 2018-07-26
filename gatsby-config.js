@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    title: 'Manufaktura Koda',
+    description: 'Manufaktura koda',
+    siteUrl: 'https://manufakturakoda.com',
+    author: 'mk',
     adsense: '',
   },
   pathPrefix: '/',
@@ -43,22 +42,22 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
+        name: 'Manufaktura Koda',
+        short_name: 'MK',
+        description: 'Offical site of manufaktura koda',
+        homepage_url: 'https://manufakurakoda.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',
         display: 'standalone',
         icons: [
           {
-            src: '/img/android-chrome-192x192.png',
+            src: '/img/mk.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/img/android-chrome-512x512.png',
+            src: '/img/mkx2.png',
             sizes: '512x512',
             type: 'image/png',
           },

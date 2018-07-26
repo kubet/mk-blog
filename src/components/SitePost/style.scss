@@ -15,22 +15,38 @@ html, body {}
       word-break: break-word;
 
       h1 {
-        color: $gray-600;
+      color: $black;
+      font-family: Merriweather;
+      font-size: 23px;
+      font-weight: bold;
       }
 
       .badge {
+        background-color: $text;
         margin-right: 3px;
       }
 
       time {
-        font-size: $font-size-xs;
-        color: $gray-500;
+        color: $silver;
+        font-family: Merriweather;
+        font-size: 14px;
         display: inline;
         margin-right: 10px;
       }
     }
 
+    #vise {
+      border-color: $text;
+      border-width: 2px;
+      border-radius: 17px;
+      font-family: karla;
+      font-size: 18px;
+      font-weight: bold;
+    }
     .page-content {
+      color: $black;
+      font-family: karla;
+      font-size: 16px;
       padding-bottom: 10px;
 
       h2 {
@@ -38,7 +54,7 @@ html, body {}
         margin-bottom: 20px;
       }
 
-      p {
+      p {   
         margin: 20px 0;
       }
 

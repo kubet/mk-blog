@@ -41,7 +41,7 @@ return ( <body style={{ backgroundImage: `url(${pathPrefix + '/img/obg.png'})` }
 			<p id="p">
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. <br/> Aliquam eget sapien sapien. Curabitur in metus urna. <br/>  In hac habitasse platea dictumst,In am us.
 			</p> 
-			<button type="button" class="btn btn-outline-dark">JOS</button>
+			<button type="button" id="joso" class="btn btn-outline-dark">JOS</button>
 		</div>
 	</div>
 </div>

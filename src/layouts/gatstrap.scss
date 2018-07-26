@@ -8,8 +8,8 @@
 //
 @import './colors.scss';
 
-/* // Reassign color vars to semantic color scheme
-$theme-colors: (
+ // Reassign color vars to semantic color scheme
+/* $theme-colors: (
   primary: $purple,
   secondary: $gray-600,
   success: $green,
@@ -18,7 +18,7 @@ $theme-colors: (
   danger: $red,
   light: $gray-100,
   dark: $gray-800,
-) !default;
+) !default; */
 
 // Options
 //
@@ -56,7 +56,7 @@ $inverse-color: $gray-600 !default;
 // Style anchor elements.
 $link-decoration: none !default;
 $link-hover-decoration: none !default;
- */
+
 // Fonts
 //
 @import './fonts.scss';

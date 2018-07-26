@@ -11,7 +11,7 @@ class SitePost extends React.Component {
   more(path) {
     return (
       <Link className="readmore" to={path}>
-        <span className="btn btn-outline-primary btn-block">JOS</span>
+        <span id="vise" className="btn btn-outline-dark btn-block">Procitaj Vise</span>
       </Link>
     )
   }
