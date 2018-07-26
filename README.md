@@ -22,7 +22,6 @@ gatsby develop
 
 * ***Spaceri u bootstrapu Promenjeni node_modules/bootstrap/scss/_variables.scss***
 
-*$spacers: map-merge((
   0: 0,
   1: ($spacer * .25),
   2: ($spacer * .5),
@@ -34,8 +33,10 @@ gatsby develop
   8: ($spacer * 29),
   11: ($spacer * 39),
   12: ($spacer * 62),
+  13: ($spacer * 7),
+  15: ($spacer * 9),
+  14: ($spacer * 20),
   9: ($spacer * 56)
-), $spacers);*
 
 ***Linija Koda 120***
 
