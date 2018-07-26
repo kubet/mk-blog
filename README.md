@@ -11,6 +11,7 @@ git clone https://github.com/kubet/mk-blog
 ```
 cd mk-blog
 ```
+***VAZNO spaceri su izmenjeni procitati dole***
 
 ```
 nmp install
