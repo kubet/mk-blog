@@ -1,8 +1,8 @@
 # Project Mk-Blog
 
-Projekat je jos uvek u razvoju
+Projekat je jos uvek u razvoju build instalacija → https://github.com/kubet/public
 
-## Instalacija
+## Instalacija za develop
 
 U mk-blog folderu
 ```
