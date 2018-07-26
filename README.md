@@ -4,7 +4,6 @@ Projekat je jos uvek u razvoju build instalacija → https://github.com/kubet/pu
 
 ## Instalacija za develop
 
-U mk-blog folderu
 ```
 git clone https://github.com/kubet/mk-blog
 ```
