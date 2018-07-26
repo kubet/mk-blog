@@ -27,8 +27,8 @@ class SiteNavi extends React.Component {
       </li>
       <li
                 className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
+                  location.pathname === '/onama/'
+                    ? 'nav-item'
                     : 'nav-item'
                 }
               >
@@ -38,8 +38,8 @@ class SiteNavi extends React.Component {
       </li>
       <li
                 className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
+                  location.pathname === '/kontakt/'
+                    ? 'nav-item'
                     : 'nav-item'
                 }
               >
