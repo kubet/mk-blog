@@ -6,21 +6,20 @@ const pathPrefix =
       process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
       const title = 'Kontakt'
 function KontaktPage() {
-return ( 
+return ( <body style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }} id="kontakt">
     <div>
     <div className="container-fluid">
-         <img  id="slika" src={pathPrefix + '/img/hbg.png'} alt="bg"/>
-        <div>
-        <ul class='social'>
+	<div>
+        <ul class='social list'>
   
-  <li className="pb-1">
+  <li className="list-item pt-1 pl-1">
   <a href="http://google.com"><img  id="fb" src={pathPrefix + '/img/fb.png'} alt="fb"/>
     </a>
   </li>
-  <li className="pb-1">
+  <li className="list-item pt-1 pl-1">
   <a href="http://google.com"><img  id="yt" src={pathPrefix + '/img/yt.png'} alt="yt"/></a>
   </li>
-  <li className="pb-1">
+  <li className="list-item pt-1 pl-1">
   <a href="http://google.com"><img  id="email" src={pathPrefix + '/img/email.png'} alt="email"/></a>
   </li>
   
@@ -50,13 +49,14 @@ return (
 				<div class="col-md-8">
 				</div>
 				<div class="col-md-4">
-                <img  className="img-fluid pt-2" id="kontakt" src={pathPrefix + '/img/kontakt.png'} alt="Kontakt"/>
+                <img  className="img-fluid pt-2" id="adresa" src={pathPrefix + '/img/kontakt.png'} alt="Kontakt"/>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
+</body>
 )}
 
 

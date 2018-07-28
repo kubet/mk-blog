@@ -33,8 +33,13 @@
     background: #ffffff;
 }
 #onama {
+    padding-bottom: 150px;
     background-repeat:no-repeat;
-    background-size:contain;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 .parag {

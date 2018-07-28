@@ -33,18 +33,7 @@ class SiteNavi extends React.Component {
                 }
               >
       <Link to="/" className="nav-link">
-                  HOME <span class="sr-only">(current)</span>
-                </Link>
-      </li>
-      <li
-                className={
-                  location.pathname === '/onama/'
-                    ? 'nav-item'
-                    : 'nav-item'
-                }
-              >
-        <Link to="/onama" className="nav-link">
-                  O NAMA
+                  BLOG <span class="sr-only">(current)</span>
                 </Link>
       </li>
       <li

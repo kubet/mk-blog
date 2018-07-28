@@ -3,7 +3,16 @@
 /* html, body {
     overflow-y: hidden;
 } */
-
+#kontakt {
+    margin-top: 0;
+    padding-bottom: 69px;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
 #slika {
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -33,17 +42,52 @@
 }
 
 .social {
-    position: fixed;
+    position: absolute;
     margin-top: 210px;
     list-style: none;
-  }
-  
-.social li a {
-    -webkit-font-smoothing: antialiased;
-    text-decoration: none;
-    text-align: center;
   }
 .img-fluid {
     height: 200px;
     width: auto;
 }
+@mixin horizontal-list {
+    padding: 0;
+    text-align: center;
+    word-spacing: -1em;
+    display: table;
+    width: 100%;
+    li {
+      display: inline-block;
+      word-spacing: 0;
+    }
+  }
+  
+  
+  @mixin horizontal-list-separated($separator:'') {
+    @include horizontal-list;
+    li:not(.last):after {
+      content: $separator;
+    }
+  }
+
+  
+  @mixin horizontal-list-padded($vertical, $horizontal) {
+    @include horizontal-list;
+    li {
+      padding: $vertical 0;
+      a {
+        padding: $vertical $horizontal;
+      }
+    }
+  }
+@media screen and (max-width: 864px) {
+
+    .social {
+        @include horizontal-list();
+        margin-top: 55px;
+    }
+    #kontakt {
+        /* padding-top: 150px; */
+    }
+}
+

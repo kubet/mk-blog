@@ -5,6 +5,7 @@ import sortBy from 'lodash/sortBy'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
+import Onama from '../components/onama'
 import SitePost from '../components/SitePost'
 
 class BlogIndex extends React.Component {
@@ -12,11 +13,9 @@ class BlogIndex extends React.Component {
     const pageLinks = []
     const site = get(this, 'props.data.site.siteMetadata')
     const posts = get(this, 'props.data.remark.posts')
-
     const sortedPosts = sortBy(posts, post =>
       get(post, 'post.frontmatter.date')
     ).reverse()
-
     sortedPosts.forEach((data, i) => {
       const layout = get(data, 'post.frontmatter.layout')
       const path = get(data, 'post.path')
@@ -31,6 +30,7 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
+            <Onama />
         <Helmet
           title={get(site, 'title')}
           meta={[
