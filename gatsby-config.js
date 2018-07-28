@@ -4,6 +4,7 @@ module.exports = {
     description: 'Manufaktura koda',
     siteUrl: 'https://manufakturakoda.com',
     author: 'mk',
+    twitter: '/',
     adsense: '',
   },
   pathPrefix: '/',
