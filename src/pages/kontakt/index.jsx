@@ -8,7 +8,7 @@ const pathPrefix =
 function KontaktPage() {
 return ( <div style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }} id="kontakt">
     <div>
-    <div className="container-fluid">
+    <div className="container-fluid" id="dole">
 	<div id="ling">
         <ul class='social list'>
   
@@ -27,7 +27,7 @@ return ( <div style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }}
         </div>
         <div className="row">
         <div className="col-md-12">
-        <div class="row pt-7">
+        <div className="row pt-7">
 				<div class="col-md-6">
 				</div>
 				<div class="col-md-6">

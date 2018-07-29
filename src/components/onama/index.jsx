@@ -10,7 +10,7 @@ class Onama extends React.Component {
     return (
       <div style={{ backgroundImage: `url(${pathPrefix + '/img/obg.png'})` }} id="onama">
     <div>
-    <div className="container-fluid" >
+    <div className="container-fluid" id="dole" >
     </div>
     <div class="container-fluid">
 	<div class="row">
@@ -21,7 +21,7 @@ class Onama extends React.Component {
 		<div class="col-md-6">
 		</div>
 		<div class="col-md-6">
-			<h2 id="h2">
+			<h2 id="h2o">
 				Zasto Bas Mi?
 			</h2>
 		</div>
@@ -30,7 +30,7 @@ class Onama extends React.Component {
 		<div class="col-md-6">
 		</div>
 		<div class="col-md-6">
-			<h1 id="h1">
+			<h1 id="h1o">
 				Lorem & Lipsum
 			</h1>
 		</div>

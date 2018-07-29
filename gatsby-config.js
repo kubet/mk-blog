@@ -49,7 +49,7 @@ module.exports = {
         homepage_url: 'https://manufakurakoda.com',
         start_url: '/',
         background_color: '#fff',
-        theme_color: '#673ab7',
+        theme_color: '#e3e3e3',
         display: 'standalone',
         icons: [
           {
