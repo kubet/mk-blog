@@ -6,7 +6,7 @@ const pathPrefix =
       process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
       const title = 'Kontakt'
 function KontaktPage() {
-return ( <html style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }} id="kontakt">
+return ( <div style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }} id="kontakt">
     <div>
     <div className="container-fluid">
 	<div id="ling">
@@ -61,7 +61,7 @@ return ( <html style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }
 	</div>
 </div>
 </div>
-</html>
+</div>
 )}
 
 
