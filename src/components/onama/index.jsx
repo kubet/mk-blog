@@ -8,7 +8,7 @@ const pathPrefix =
 class Onama extends React.Component {
   render() {
     return (
-      <body style={{ backgroundImage: `url(${pathPrefix + '/img/obg.png'})` }} id="onama">
+      <html style={{ backgroundImage: `url(${pathPrefix + '/img/obg.png'})` }} id="onama">
     <div>
     <div className="container-fluid" >
     </div>
@@ -49,7 +49,7 @@ class Onama extends React.Component {
 	</div>
 </div>
     </div>
-    </body>
+    </html>
     )
   }
 }
