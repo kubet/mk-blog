@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import './style.scss'
 const pathPrefix =
       process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
-      const title = 'Kontakt'
+      const title = 'Kontakt'        
 function KontaktPage() {
 return (
       <div className="container-fluid" id="forma">
@@ -24,10 +24,15 @@ return (
          </div>
          <div className="row">
             <div className="col-md-4">
-               <form name="kont" data-netlify="true" method="POST" netlify-honeypot="bot-field">
-                  <p className="hidden">
-                     <label>Ne Popunajvati<input name="bot-field" /></label>
-                  </p>
+               <form name="contact"
+          method="post"
+          action="/success/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+          <input type="hidden" name="bot-field" />
+          </p>
                   <p>
                      <label>Ime</label>
                      <input type="text" className="form-control" name="name" />
