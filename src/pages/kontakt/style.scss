@@ -1,105 +1,33 @@
-@import '../../layouts/colors.scss';
-
-#ling {
-    z-index: 1000;
-    position: relative;
+#forma {
+    padding-top: 150px;
+    font-family: karla;
+    padding-left: 30px;
+    margin-top: 1px;
 }
-#kontakt {  
-    padding-bottom: 69px;
-    background-size: 100%;
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position:center;
-    background-color: #dfe6e9;
+.sociall{
+    list-style-type: none !important;
+    text-decoration: none !important;
+    padding-top: 140px;
+    padding-left: 140px; 
+}
+.sociali {
+}
+.nodec {
+    color: #ffab00;
+}
+#dug {
+    margin-top: 10px;
+}
+.iconk {
+    margin-top: -55px;
 }
 .kontakti {
-    list-style: none;
-    
+    padding-top: 300px;
+    padding-left: 650px;
 }
-#mail {
-}
-.imgk {
-    padding-bottom: 15px;
-}
-.kontakti {
-    font-family: ubuntu;
-    font-size: 16px;
-    font-weight: bold;
-}
-#h1 {
-    color: $text;
-    font-family: ubuntu;
-    font-size: 70px;
-    font-weight: bold;
-}
-#h2 {
-    color: $text;
-    font-family: 'Futura Lt BT';
-    font-size: 53px;
-    font-weight: 100;
-}
-.slike { 
-    position: absolute;
-    height: 150px;
-    width: auto;
-
-}
-
-.social {
-    position: absolute;
-    margin-top: 210px;
-    list-style: none;
-  }
-.img-fluid {
-    height: 200px;
-    width: auto;
-}
-@mixin horizontal-list {
-    padding: 0;
-    text-align: center;
-    word-spacing: -1em;
-    display: table;
-    width: 100%;
-    li {
-      display: inline-block;
-      word-spacing: 0;
-    }
-  }
-  
-  
-  @mixin horizontal-list-separated($separator:'') {
-    @include horizontal-list;
-    li:not(.last):after {
-      content: $separator;
-    }
-  }
-
-  
-  @mixin horizontal-list-padded($vertical, $horizontal) {
-    @include horizontal-list;
-    li {
-      padding: $vertical 0;
-      a {
-        padding: $vertical $horizontal;
-      }
-    }
-  }
 @media screen and (max-width: 864px) {
-    #dole {
-        padding-top: 30px;
-    }
-
-    .social {
-        @include horizontal-list();
-        margin-top: 55px;
-    }
-    #kontakt {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: #dfe6e9;
+    .kontakti {
+        padding-top: 0px;
+        padding-left: 0px;
     }
 }
-

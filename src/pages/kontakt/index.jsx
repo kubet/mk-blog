@@ -6,61 +6,56 @@ const pathPrefix =
       process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
       const title = 'Kontakt'
 function KontaktPage() {
-return ( <div style={{ backgroundImage: `url(${pathPrefix + '/img/hbg.png'})` }} id="kontakt">
-    <div>
-    <div className="container-fluid" id="dole">
-	<div id="ling">
-        <ul class='social list'>
-  
-  <li className="list-item pl-1 pt-1">
-  <a href="http://fb.com"><img  id="fb" src={pathPrefix + '/img/fb.png'} alt="fb"/>
-    </a>
-  </li>
-  <li className="list-item pl-1 pt-1">
-  <a href="http://youtube.com"><img  id="yt" src={pathPrefix + '/img/yt.png'} alt="yt"/></a>
-  </li>
-  <li className="list-item pl-1 pt-1">
-  <a href="mailto:manufaktura@koda.com"><img  id="email" src={pathPrefix + '/img/email.png'} alt="email"/></a>
-  </li>
-  
-</ul>
-        </div>
-        <div className="row">
-        <div className="col-md-12">
-        <div className="row pt-7">
-				<div class="col-md-6">
-				</div>
-				<div class="col-md-6">
-					<h2 id="h2" class="text-right">
-						Zasto Bas Mi?
-					</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-8">
-					<h1 id="h1" class="text-right">
-						Stupite u kontakt
-					</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-				</div>
-				<div class="col-md-4">
-				{/* <img  className="img-fluid pt-2" id="adresa" src={pathPrefix + '/img/kontakt.png'} alt="Kontakt"/> */}
-				<ul className="kontakti">
-				<li><img  className="imgk pt-2 pl-1 pr-3" id="lokacija" src={pathPrefix + '/img/loc.png'} alt="Lokacija"/>Grape 765a, Belgrade, Serbia</li>
-				<li><img  className="imgk pt-2 pl-2 pr-3" id="phone" src={pathPrefix + '/img/phone.png'} alt="Kontakt"/>06123456789</li>
-				<li><img  className="imgk pt-2 pr-3 " id="mail" src={pathPrefix + '/img/mail.png'} alt="Mail"/>Manufaktura@koda.com</li>
-				</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+return (
+      <div className="container-fluid" id="forma">
+   <div className="row">
+      <div className="col-md-12">
+         <div className="row">
+            <div className="col-md-12">
+            </div>
+         </div>
+         <div className="row">
+            <div className="col-md-12">
+            </div>
+         </div>
+         <div className="row">
+            <div className="col-md-12">
+            </div>
+         </div>
+         <div className="row">
+            <div className="col-md-4">
+               <form name="kont" data-netlify="true" method="POST" netlify-honeypot="bot-field">
+                  <p className="hidden">
+                     <label>Ne Popunajvati<input name="bot-field" /></label>
+                  </p>
+                  <p>
+                     <label>Ime</label>
+                     <input type="text" className="form-control" name="name" />
+                  </p>
+                  <p>
+                     <label>Email</label>
+                     <input type="text" className="form-control" name="email" />
+                  </p>
+                  <p>
+                     <label>Poruka</label>
+                     <textarea name="message" className="form-control" rows="5" ></textarea>
+                  </p>
+                  <p>
+                     <button className="btn btn-warning btn-lg" type="submit">Posalji</button>
+                  </p>
+               </form>
+            </div>
+            <div className="kontakti">
+               <div className="media">
+                  <a href="http://"><img  className="pr-1" src={pathPrefix + '/img/github-logo.svg'} alt="Github" width="30" height="100"/><span className="nodec" >Link za GitHub</span></a>
+               </div>
+               <div className="media">
+                  <a className="iconk" href="http://"><img  className="pr-1" src={pathPrefix + '/img/Linkedin-logo.svg'} alt="Linkedin" width="30" height="100"/><span className="nodec" >Link za Linkedin</span></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
 )}
 

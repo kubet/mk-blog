@@ -2,8 +2,11 @@
 
 .footer {
   hr {
-    border-color: $red;
+    border-color: $text;
     border-width: 3px;
     max-width: 50px;
   }
+}
+.texts {
+  border-color: $text;
 }

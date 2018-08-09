@@ -1,84 +1,37 @@
-import React from 'react'
+﻿import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
-import sortBy from 'lodash/sortBy'
-import Helmet from 'react-helmet'
-import LazyLoad from 'react-lazyload'
 
-import Onama from '../components/onama'
-import SitePost from '../components/SitePost'
+import './styles.scss'
+const pathPrefix =
+      process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
 
-class BlogIndex extends React.Component {
+class Onama extends React.Component {
   render() {
-    const pageLinks = []
-    const site = get(this, 'props.data.site.siteMetadata')
-    const posts = get(this, 'props.data.remark.posts')
-    const sortedPosts = sortBy(posts, post =>
-      get(post, 'post.frontmatter.date')
-    ).reverse()
-    sortedPosts.forEach((data, i) => {
-      const layout = get(data, 'post.frontmatter.layout')
-      const path = get(data, 'post.path')
-      if (layout === 'post' && path !== '/404/') {
-        pageLinks.push(
-          <LazyLoad height={500} offset={500} once={true} key={i}>
-            <SitePost data={data.post} site={site} isIndex={true} key={i} />
-          </LazyLoad>
-        )
-      }
-    })
-
     return (
-      <div>
-            <Onama />
-        <Helmet
-          title={get(site, 'title')}
-          meta={[
-            { name: 'twitter:card', content: 'summary' },
-            { name: 'twitter:site', content: `@${get(site, 'twitter')}` },
-            { property: 'og:title', content: get(site, 'title') },
-            { property: 'og:type', content: 'website' },
-            { property: 'og:description', content: get(site, 'description') },
-            { property: 'og:url', content: get(site, 'url') },
-            {
-              property: 'og:image',
-              content: `${get(site, 'url')}/img/profile.jpg`,
-            },
-          ]}
-        />
-        {pageLinks}
+			<div className="container-fluid" id="onama">
+   <div className="row">
+      <div className="col-md-4">
       </div>
+      <div className="col-md-4 pb-3" id="slikaa">
+         <img alt="MK" src={pathPrefix + '/img/MK.svg'} width="100" height="100"/>
+      </div>
+      <div className="col-md-4">
+      </div>
+   </div>
+   <div className="row">
+      <div className="col-md-2">
+      </div>
+      <div className="col-md-8" id="center">
+         <p className="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna.
+         </p>
+      </div>
+      <div className="col-md-2">
+      </div>
+   </div>
+</div>
     )
   }
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        adsense
-      }
-    }
-    remark: allMarkdownRemark {
-      posts: edges {
-        post: node {
-          html
-          frontmatter {
-            layout
-            title
-            path
-            categories
-            date(formatString: "YYYY/MM/DD")
-          }
-        }
-      }
-    }
-  }
-`
+export default Onama

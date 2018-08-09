@@ -1,54 +1,27 @@
 @import 'src/layouts/colors.scss';
 @import 'src/layouts/fonts.scss';
 
-.nlogo #mobile {
-    display: none;
-  }
-  @media (max-width: 600px) {
-    .nlogo #mobile {
-      display: block;
-    }
-    .nlogo #desktop {
-      display: none;
-    }
-  }
-.navbar {
-        height: 85px;
-    }
-#crvena {
-        color:$red;
-    }
-#mobile {
-    font-size: 25px;
+
+.nav.navbar-nav {
+	display: flex;
+	justify-content: center;
+      flex-wrap: wrap;
+
 }
-#desktop {
-    font-size: 25px;
-    padding: 0px 133px;
+@media (min-width: 995px) {
+	.navbar-nav {
+		float: none;
+	}
 }
 .nav-link {
     font-family: karla;
     font-size: 18px;
 }
-.navbar-brand {
-    font-family: 'space mono';
-}
 .navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:20px;
+    padding-right:20px;
   }
-
-  /* Nav */
-
-#mobile {
-    float: left;
-    padding: 8px 50px;
-}
-
-@media screen and (max-width: 864px) {
-
-    .nlogo {
-          padding: 0;
-    }
+@media screen and (max-width: 995px) {
     
     .nav-wrapper {
           position: fixed;
@@ -98,7 +71,7 @@
     }
 
     .nav-wrapper ul li a {
-          padding: 10px 24px;
+          
           opacity: 0;
           color: #000;
           transform: translateX(-20px);

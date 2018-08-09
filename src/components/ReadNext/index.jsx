@@ -11,7 +11,7 @@ class ReadNext extends React.Component {
 
     return (
       <div className="footer">
-        <hr className="border-primary" />
+        <hr className="texts" />
         <p>
           {title}
         </p>
